@@ -1,0 +1,9 @@
+name_or_path: /root/autodl-tmp/mnt/memit/model/gpt-neo-1.3b
+tokenizer_name_or_path: /root/autodl-tmp/mnt/memit/model/gpt-neo-1.3b
+archive: null
+block_name: NeoBlock
+
+policy_dtype: float32
+fsdp_policy_mp: null
+reference_dtype: float16
+id: neo

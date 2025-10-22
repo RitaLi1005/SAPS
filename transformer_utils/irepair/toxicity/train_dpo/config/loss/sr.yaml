@@ -1,0 +1,15 @@
+# do DPO preference-based training
+name: sr
+
+beta: 0.5
+
+gamma: 1.0
+
+loss_scale: 1.0
+
+##slicing
+fixed_selection: False  #
+dynamic_selection: True #
+
+num_sample_fixed_selection: 500
+

@@ -1,0 +1,9 @@
+name_or_path: /root/autodl-tmp/mnt/memit/model/gpt2-xl
+tokenizer_name_or_path: /root/autodl-tmp/mnt/memit/model/gpt2-xl
+archive: null
+block_name: GPT2Block
+
+policy_dtype: float32
+fsdp_policy_mp: null
+reference_dtype: float16
+id: gpt2

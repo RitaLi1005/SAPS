@@ -1,0 +1,53 @@
+defaults:
+  - _self_
+  - model: gpt-neo-medium
+  - loss: sr
+
+batch_size: 4
+max_prompt_length: 1024
+max_new_tokens: 128
+valid_size: 64
+max_length: 1024
+eval_every: 40
+eval_batch_size: 8
+n_eval_model_samples: 64
+local_dirs:
+  output: /root/autodl-tmp/mnt/irepair_result  # 或你自定义的路径
+local_run_dir: /root/autodl-tmp/mnt/SAPS/transformer_utils/irepair/toxicity/train_dpo/config
+
+resume_train: False  #是否需要再训练
+debug: False
+wandb:
+  enabled: False
+seed: 202
+n_epochs: 1
+trainer: BasicTrainer
+validation_direction: min
+
+optimizer: RMSprop
+lr: 5e-5 #5e-5
+weight_decay: 0.01
+momentum: 0.9
+alpha: 0.99
+warmup_steps: 150
+gradient_accumulation_steps: 1 #可以控制显存的梯度累积参数
+#
+enable_max_step: False
+max_step: 970
+#
+max_grad_norm: 0.5
+minimum_log_interval_secs: 30
+sample_during_eval: False
+sample_every: 20
+validation_metric: "loss/valid"
+
+validation_patience: 30
+
+#################
+sample_seed: 43
+sample_method: SAPS
+sample_percentage: 50
+sample_alpha: 1.0
+
+
+

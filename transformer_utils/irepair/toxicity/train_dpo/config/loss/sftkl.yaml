@@ -1,0 +1,12 @@
+# do DPO preference-based training
+name: sftkl
+
+beta: 0.5
+
+gamma: 1.0
+
+loss_scale: 1.0
+
+##slicing
+dynamic_selection: False
+
