@@ -26,7 +26,9 @@ To quickly reproduce the repair experiments:
 3. After preparing the data, run `python transformer_utils/sample_selection/selection/Calculate_Scores.py` to obtain data selection results, where the training set size is determined by the number of samples used for full repair with a fixed random seed.
 
 4. Finally, execute `bash transformer_utils/irepair/toxicity/run_repair.sh` to perform the model repair process. The repair procedure will automatically start, and the results will be stored in the corresponding output directories.
-   
+
+##  Experimental setup 
+Each experiment was conducted using one H20-NVLink GPU (96 GB) and a 16 vCPU AMD EPYC 9K84 96-Core Processor. Experimental logs and outputs can be found at [https://huggingface.co/datasets/rita1005/SAPS](https://huggingface.co/datasets/rita1005/SAPS).
 
 ## Acknowledgement
 We thank the implementation of [ajyl/dpo_toxic](https://github.com/ajyl/dpo_toxic) and [IRepair](https://huggingface.co/datasets/Anonymous007/IRepair), which inspires some code in this repo.
