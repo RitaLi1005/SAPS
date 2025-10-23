@@ -29,4 +29,4 @@ To quickly reproduce the repair experiments:
    
 
 ## Acknowledgement
-We thank the implementation of [ajyl/dpo_toxic](https://github.com/ajyl/dpo_toxic) and [IRepair](https://huggingface.co/datasets/Anonymous007/IRepair)), which inspires some code in this repo.
+We thank the implementation of [ajyl/dpo_toxic](https://github.com/ajyl/dpo_toxic) and [IRepair](https://huggingface.co/datasets/Anonymous007/IRepair), which inspires some code in this repo.
