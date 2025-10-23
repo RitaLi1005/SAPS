@@ -2,7 +2,7 @@
 Code Replication for "An Empirical Study of Sample Selection Strategies for Large Language Model Repair"
 
 This repository contains code related to the paper _An Empirical Study of Sample Selection Strategies for Large Language Model Repair_. The framework is shown as follows:
-![image](image/frameworkrq.pdf)
+![image](image/frameworkrq.png)
 
 
 ## Process of SAPS
@@ -14,7 +14,7 @@ This repository contains code related to the paper _An Empirical Study of Sample
 (c) Boundary-Aware Sampling, which selects peripheral samples within each cluster to capture semantic boundaries and preserve informative diversity. The resulting prioritized dataset balances efficiency and representativeness for downstream model repair.
 
 The framework is shown as follows:
-![image](image/framework.pdf)
+![image](image/framework.png)
 
 
 ## Acknowledgement
